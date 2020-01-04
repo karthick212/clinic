@@ -6,7 +6,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eleganter - New Amazing HTML5 Template</title>
+    <title>YOGAM PHYSIOTHERAPY CLINIC</title>
    <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/icons.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -30,9 +30,9 @@
         <div class="s-12 m-14 l-12">
           <a href="index.php" class="logo">
             <!-- Logo White Version -->
-            <p style="text-align: center;color: #20B2AA;font-size: 18px;font-weight: bold;padding: 5px;">உங்கள் தேவை எங்கள் சேவை...!!</p>
+            <p style="text-align: center;color: #20B2AA;font-size: 15px;font-weight: bold;padding: 5px;margin-left: 50px">உங்கள் தேவை எங்கள் சேவை...!!</p>
           </a>
-        
+        </div>
         <div class="top-nav s-10 m-8 l-15">
           
           <ul class="right chevron">
@@ -55,12 +55,25 @@
 				</li>
 			<li><a href="contact.php">CONTACT US</a></li>
           </ul>
-        </div>
+        
       </div>
       </nav>
 
+
+      
     </header>
+<?php
+    require_once('db.php');
+    $result = $conn->prepare("SELECT * FROM y_image ORDER BY tbl_image_id ASC");
+    $result->execute();
+    for($i=0; $row = $result->fetch(); $i++){
+      $id=$row['tbl_image_id'];
+      ?>
     
+
+
+      <img src="Admin/uploads/<?php echo $row['image_location']; ?>" height="150" width="150" alt="View" title="View";"/>
+    <?php } ?>    
     <!-- MAIN -->
     <main role="main">    
       <!-- Main Header -->
@@ -70,12 +83,12 @@
             <div class="topnav s-20 l-20">
             
             <div class="responsive">
-			<img src="images/hands-1662614_1280.jpg" alt="">
+			<img src="hands-1662614_1280.jpg" srcset="images/hands-1662614_1280.jpg 1x, images/hands-1662614_1280.jpg 2x">
               <div class="carousel-content">
                 <div class="content-center-vertical line">
                   <div class="margin-top-bottom-80">
-<div class="margin-top-bottom-80" style="margin-top:-150px !important">
-	<h1 class="ml3" style="text-white margin-bottom-30 text-size-36 text-m-size-30 text-line-height-1">YOGAM PHYSIOTHERAPY CLINIC</h1>
+<div class="margin-top-bottom-60" style="margin-top:-150px !important">
+	<h1 class="ml3" style="text-white margin-bottom-30 text-size-12 text-m-size-36 text-line-height-1">YOGAM PHYSIOTHERAPY CLINIC</h1>
 </div> 
  </div>
 			 </div>
@@ -85,17 +98,7 @@
         </div>        
         </div>       
       </header>
-          <?php
-    require_once('db.php');
-    $result = $conn->prepare("SELECT * FROM y_image ORDER BY tbl_image_id ASC");
-    $result->execute();
-    for($i=0; $row = $result->fetch(); $i++){
-      $id=$row['tbl_image_id'];
-      ?>
-
-
-      <img src="Admin/uploads/<?php echo $row['image_location']; ?>" height="150" width="150" alt="View" title="View";"/>
-    <?php } ?>
+          
 
     </main>
     

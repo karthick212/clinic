@@ -106,17 +106,19 @@ display:block;
 #responsive
 {
   width: 60%;
-  max-width: 1000px;
-height: 100px;
-
+  max-width: 800px;
+  height: 100px;
+  max-height: 1000px;
 }
-.ml3
+#ml3
 {
-	font-weight:30%;
-	font-size:3.5em;
-	text-align:center;
+	font-weight:10%;
+  font-size: 1.5em;
+  text-align:center;
 	color:#EB9100;
 }
+
+
 .mySlides
 {
 display:none;

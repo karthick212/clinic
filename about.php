@@ -21,35 +21,8 @@
   <body class="size-1140">
     <header role="banner" class="position-absolute">    
       <nav class="background-transparent background-transparent-hightlight full-width sticky">
-        <div class="s-12 l-2">
-          <a href="index.php" class="logo">
-            <!-- Logo White Version -->
-            <p style="text-align: center;color: #20B2AA;font-size: 14px;font-weight: bold;padding: 10px;">YOGAM PHYSIOTHERAPY CLINIC</p>
-          </a>
-        </div>
-        <div class="top-nav s-12 l-10">
-          
-          <ul class="right chevron">
-		  			<li><a href="index.php">HOME</a></li>
-			<li><a href="about.php">ABOUT</a></li>
-				<li><a>CAREERS</a>
-				<ul>
-				<li><a href="careers.php">Careers</a></li>
-				<li><a href="seminars.php">Workshops & Seminars</a></li>
-				</ul>
-				</li>
-				<li><a>SUPPORT AND SERVICES</a>
-				<ul>
-				<li><a href="ortho.php">Orthopaedic Rehabilitation</a></li>
-			    <li><a href="neuro.php">Neurological Rehabilitation</a></li>
-				<li><a href="pain.php">Pain Care</a></li>
-				<li><a href="psy.php">Psychological Care</a></li>
-				<li><a href="hypn.php">Hypnotherapy</a></li>
-				</ul>
-				</li>
-			<li><a href="contact.php">CONTACT US</a></li>
-          </ul>
-        </div>
+        <?php include_once('tamilheader.php');?>
+<?php include_once('indexheader.php');?>
       </nav>
     </header>
     
