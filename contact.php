@@ -15,26 +15,17 @@
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
-
-
-	</head>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>      
+  </head>
   
-  <body class="size-1140">
-<header role="banner" class="position-absolute">    
-      <!-- Top Navigation -->
+ <body class="size-1140">
+    <header role="banner" class="position-absolute">    
       <nav class="background-transparent background-transparent-hightlight full-width sticky">
-      <?php include_once('tamilheader.php');?> 
-      
-       <?php include_once('indexheader.php');?>
+        <?php include_once('tamilheader.php');?>
+<?php include_once('indexheader.php');?>
       </nav>
     </header>
-    
+
     <!-- MAIN -->
     <main role="main">
       <!-- Content -->

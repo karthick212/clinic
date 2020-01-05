@@ -58,25 +58,11 @@
         
       </div>
       </nav>
+  </header>
 
-
-      
-    </header>
-<?php
-    require_once('db.php');
-    $result = $conn->prepare("SELECT * FROM y_image ORDER BY tbl_image_id ASC");
-    $result->execute();
-    for($i=0; $row = $result->fetch(); $i++){
-      $id=$row['tbl_image_id'];
-      ?>
-    
-
-
-      <img src="Admin/uploads/<?php echo $row['image_location']; ?>" height="150" width="150" alt="View" title="View";"/>
-    <?php } ?>    
     <!-- MAIN -->
     <main role="main">    
-      <!-- Main Header -->
+      <article>
       <header>
         <div class="carousel-default owl-carousel carousel-main carousel-nav-white background-dark text-center">
           <div class="item">
@@ -98,12 +84,20 @@
         </div>        
         </div>       
       </header>
-          
-
+    </article>
     </main>
+<?php
+    require_once('db.php');
+    $result = $conn->prepare("SELECT * FROM y_image ORDER BY tbl_image_id ASC");
+    $result->execute();
+    for($i=0; $row = $result->fetch(); $i++){
+      $id=$row['tbl_image_id'];
+      ?>
+
+
+      <img src="Admin/uploads/<?php echo $row['image_location']; ?>" height="150" width="150" alt="View" title="View";"/>
+    <?php } ?>
     
-    <!-- FOOTER -->
-    </footer>
    <footer>
       <!-- Contact Us -->
       <div class="padding text-center" style="background-color: #ff4500;">
